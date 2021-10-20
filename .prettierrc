@@ -1,0 +1,9 @@
+{
+    "insertPragma": false,
+    "quoteProps": "as-needed",
+    "singleQuote": true,
+    "trailingComma": "none",
+    "tabWidth": 4,
+    "rangeStart": 0,
+    "printWidth": 100
+}

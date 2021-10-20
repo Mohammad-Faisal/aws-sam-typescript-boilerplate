@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: AWS SAM template for Survey API
+
+Globals:
+  Function:
+    Runtime: nodejs14.x
+    Timeout: 30
+Resources:
+  TestLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: app.handler
+      FunctionName: "Test-Lambda"
+      CodeUri: src/test-lambda/
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /test
+            Method: get
