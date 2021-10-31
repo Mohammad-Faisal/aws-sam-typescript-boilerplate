@@ -1,20 +1,18 @@
 {
     "name": "aws-sam-typescript-boilerplate",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "AWS SAM Boilerplate with Typescript",
     "scripts": {
         "watch": "webpack-cli -w",
         "build": "webpack-cli",
         "test": "jest"
     },
-    "keywords": [],
-    "author": "",
+    "author": "Mohammad Faisal",
     "license": "ISC",
     "devDependencies": {
         "@types/aws-lambda": "^8.10.84",
         "@types/jest": "^27.0.2",
-        "@types/node": "^16.11.1",
+        "@types/node": "^16.11.6",
         "@types/webpack": "^5.28.0",
         "@typescript-eslint/eslint-plugin": "^5.1.0",
         "@typescript-eslint/parser": "^5.1.0",
