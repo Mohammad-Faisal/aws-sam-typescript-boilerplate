@@ -3,9 +3,13 @@
     "version": "1.0.0",
     "description": "AWS SAM Boilerplate with Typescript",
     "scripts": {
+        "clean": "rimraf .aws-sam .vscode",
+        "prewatch": "rimraf .aws-sam .vscode",
         "watch": "webpack-cli -w",
+        "prebuild": "rimraf .aws-sam .vscode",
         "build": "webpack-cli",
-        "test": "jest"
+        "test": "jest",
+        "lint": "eslint  ./src/** --fix"
     },
     "author": "Mohammad Faisal",
     "license": "ISC",
