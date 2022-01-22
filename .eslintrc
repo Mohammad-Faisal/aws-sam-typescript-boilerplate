@@ -1,66 +1,42 @@
 {
-  "root": true,
-  "env": {
-    "es2020": true,
-    "node": true,
-    "jest": true
-  },
-  "parser": "@typescript-eslint/parser",
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended" // This will display prettier errors as ESLint errors. Make sure this is always the last configuration.
-  ],
-  "ignorePatterns": ["src/**/*.test.ts", "dist/", "coverage/", "test/"],
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "impliedStrict": true
+    "root": true,
+    "env": {
+        "es2020": true,
+        "node": true,
+        "jest": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended" // This will display prettier errors as ESLint errors. Make sure this is always the last configuration.
+    ],
+    "ignorePatterns": ["src/**/*.test.ts", "dist/", "coverage/", "test/"],
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "impliedStrict": true
+        }
+    },
+    "rules": {
+        "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+        "default-case": "warn",
+        "no-param-reassign": "warn",
+        "no-await-in-loop": "warn",
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "none"
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
     }
-  },
-  "rules": {
-    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
-    "no-unused-vars": "warn",
-    "array-callback-return": "warn",
-    "eqeqeq": "warn",
-    "curly": [2, "all"],
-    "global-require": "warn",
-    "default-case": "off",
-    "consistent-return": "off",
-    "prefer-destructuring": "warn",
-    "max-classes-per-file": "warn",
-    "no-shadow": "off",
-    "no-return-assign": "warn",
-    "no-bitwise": "warn",
-    "no-else-return": "off",
-    "no-param-reassign": "warn",
-    "no-lone-blocks": "warn",
-    "no-multi-assign": "warn",
-    "no-restricted-syntax": "warn",
-    "no-continue": "warn",
-    "no-nested-ternary": "warn",
-    "no-prototype-builtins": "warn",
-    "no-plusplus": "off",
-    "no-restricted-globals": "warn",
-    "no-case-declarations": "warn",
-    "no-await-in-loop": "warn",
-    "no-underscore-dangle": "warn",
-    "no-restricted-properties": "warn",
-    "operator-assignment": "warn",
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        "vars": "all",
-        "args": "none"
-      }
-    ]
-  },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
-    }
-  }
 }
