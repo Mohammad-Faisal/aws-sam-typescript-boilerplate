@@ -9,7 +9,7 @@
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:prettier/recommended" // This will display prettier errors as ESLint errors. Make sure this is always the last configuration.
+        "plugin:prettier/recommended" // This will display Prettier errors as ESLint errors. Make sure this is always the last configuration.
     ],
     "ignorePatterns": ["src/**/*.test.ts", "dist/", "coverage/", "test/"],
     "parserOptions": {
