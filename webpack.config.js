@@ -1,6 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
 const AwsSamPlugin = require('aws-sam-webpack-plugin');
-
 const awsSamPlugin = new AwsSamPlugin();
 
 module.exports = {
